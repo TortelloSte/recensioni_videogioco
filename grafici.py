@@ -55,8 +55,8 @@ def plot_voti(df):
     divisioni_df = divisioni_df.reindex(columns=sorted(divisioni_df.columns, key=lambda x: int(x.split()[0]) if x.split()[0].isdigit() else x))
     divisioni_df.to_csv("./data/analisi_voti_giorno.csv", index=False) # salvo queste analisi dentro un altro csv per andare a lavorarlo da un'altra parte
     # Visualizzazione del DataFrame delle divisioni percentuali dei voti
-    print("voti nella settimana:")
-    print(divisioni_df)
+    # print("voti nella settimana:")
+    # print(divisioni_df)
 
     giorni = divisioni_df.columns.tolist()
 
